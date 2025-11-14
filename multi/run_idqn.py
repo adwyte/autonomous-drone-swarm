@@ -1,3 +1,14 @@
+import os
+import sys
+import numpy as np
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
+
+from multi.ma_grid import GridMultiAgent
+from DQN.idqn import QNet, ReplayBuffer, train  # check names in DQN/idqn.py
+
 #--------- Training ---------#
 
 # parameters

@@ -1,3 +1,14 @@
+import os
+import sys
+import numpy as np
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
+
+from single.Grid import Grid
+from DQN.dqn import Net, ReplayBuffer, QValues
+
 #--------- Training ---------#
 
 # metrics for each episode

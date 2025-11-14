@@ -1,6 +1,6 @@
-# !pip install -q torch-scatter -f https://pytorch-geometric.com/whl/torch-1.9.0+cu111.html
-# !pip install -q torch-sparse -f https://pytorch-geometric.com/whl/torch-1.9.0+cu111.html
-# !pip install -q torch-geometric
+!pip install -q torch-scatter -f https://pytorch-geometric.com/whl/torch-1.9.0+cu111.html
+!pip install -q torch-sparse -f https://pytorch-geometric.com/whl/torch-1.9.0+cu111.html
+!pip install -q torch-geometric
 
 import numpy as np
 import collections

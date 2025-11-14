@@ -1,3 +1,5 @@
+import gym
+
 class MultiAgentActionSpace(list):
     def __init__(self, agents_action_space):
         for x in agents_action_space:

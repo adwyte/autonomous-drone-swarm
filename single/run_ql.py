@@ -1,3 +1,16 @@
+import os
+import sys
+import copy
+import random
+import numpy as np
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
+
+from single.Grid import Grid
+from QL.qtables_pos import QTables  # single-agent position-based tables
+
 #--------- Training ---------#
 
 # metrics for each episode

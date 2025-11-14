@@ -1,3 +1,8 @@
+import numpy as np
+import random
+import gym
+from gym import spaces
+
 class Grid(gym.Env):
     metadata = {'render.modes': ['console']}
     # action id

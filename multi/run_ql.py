@@ -1,3 +1,17 @@
+import os
+import sys
+import copy
+import random
+import numpy as np
+
+# Make the project root importable (folder that contains "multi", "single", "QL", etc.)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
+
+from multi.ma_simple_grid import Grid
+from QL.qtables_fov import QTables
+
 # ===================================================================================================
 # Training: 1 drone
 # ===================================================================================================
